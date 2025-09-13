@@ -30,16 +30,19 @@ class AdminPanelProvider extends PanelProvider
             ->path('')
             ->login()
             ->brandName('InglêsADM')
+            ->sidebarCollapsibleOnDesktop()
             ->colors([
-                'primary' => Color::Blue,
+                // 'primary' => '#FF5733',
+                'primary' => Color::Slate,
             ])
+                    ->viteTheme('resources/css/filament/admin/theme.css')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
-                AccountWidget::class,
-                FilamentInfoWidget::class,
+                // AccountWidget::class,
+                // FilamentInfoWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

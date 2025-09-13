@@ -30,7 +30,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('')
             ->login()
             ->brandName('InglêsADM')
-            ->sidebarCollapsibleOnDesktop()
+            ->sidebarFullyCollapsibleOnDesktop()
             ->colors([
                 // 'primary' => '#FF5733',
                 'primary' => Color::Slate,
